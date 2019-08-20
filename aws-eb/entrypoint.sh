@@ -35,6 +35,7 @@ EOF
 ${HOME}/bin/deployment-create-status pending
 
 # Execute
+cd server
 output=$( sh -c "eb $*" )
 
 # Failure
